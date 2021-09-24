@@ -1,6 +1,8 @@
 (() => {
-const errorMessage = '<span class="error"> Your input is invalid.</span>'; //esta e s la variable que comple la funcion de avisar el mje de error
-// las variables se declaran ANTES de usarlas. CONST is used when the variable will not be reassigned to another value!
+/*esta e s la variable que comple la funcion de avisar el mje de error
+ las variables se declaran ANTES de usarlas. CONST is used when the variable will not be reassigned to another value!*/
+const errorMessage = '<span class="error"> Your input is invalid.</span>'; 
+//esta variable es para controlar que ingresen un dato valido, como un numero:
 const isValidNumber = input => !isNaN(+input) && +input >= 0;/*estas flechitas significan FUNCIONES. Arrow Function. The parameters come before the arrow and the main body of the function
 comes after*/
 const factor = num => num > 0 ? num + factor(num - 1) : 0 ; /*Ternary Operator A shorthand way of writing an if ... else statement is to use the ternary
@@ -14,7 +16,7 @@ const setIfValid = (sel, val) => document.querySelector(sel) .innerHTML = isVali
  const sumInSeries = e => setIfValid('#sum-in-series-results', factor (getNum('#series')));
  const sumTwo = e => setIfValid('#sum-two-results', getNum('#add1') + getNum('#add2'));
 
-
+//estos siguientes tres renglones es para cuando el usuario hace click
 document.querySelector('#submit-echo').addEventListener('click', echo); // conecta con ingreso de datos en linea 13
 document.querySelector('#submit-series').addEventListener('click', sumInSeries); // conecta con ingreso de datos en linea 14
 document.querySelector('#submit-add').addEventListener('click', sumTwo); // conecta con ingreso de datos en linea 15
