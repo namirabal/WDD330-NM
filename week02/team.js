@@ -1,5 +1,5 @@
 (() => {
-const errorMessage = '<span class="error"> Yoour input is invalid.</span>'; //esta e s la variable que comple la funcion de avisar el mje de error
+const errorMessage = '<span class="error"> Your input is invalid.</span>'; //esta e s la variable que comple la funcion de avisar el mje de error
 // las variables se declaran ANTES de usarlas. CONST is used when the variable will not be reassigned to another value!
 const isValidNumber = input => !isNaN(+input) && +input >= 0;/*estas flechitas significan FUNCIONES. Arrow Function. The parameters come before the arrow and the main body of the function
 comes after*/
