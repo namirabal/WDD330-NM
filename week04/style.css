@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  text-align: center;
+  color: #a2d2ff;
+}
+td {
+  width: 100px;
+  height: 100px;
+}
+table {
+  margin: auto;
+}
+.vertical {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+.horizontal {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+#square {
+  border: 2px solid black;
+}
+a {
+  text-decoration: none;
+}

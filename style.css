@@ -1,0 +1,27 @@
+body {
+  background-color: #a8e7e9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor {
+  display: grid;
+}
+h1 {
+  color: #ffef78;
+  margin-bottom: -10px;
+}
+h2 {
+  color: #ffef78;
+}
+h3 {
+  color: #eb92be;
+  text-align: auto;
+}
+ol {
+  text-align: auto;
+}
+li {
+  margin: 8px;
+}
+a {
+  text-decoration: none;
+}
