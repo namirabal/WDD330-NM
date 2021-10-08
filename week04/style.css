@@ -1,28 +1,43 @@
+html {
+  text-align: center;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
-  text-align: center;
-  color: #a2d2ff;
+  color: aquamarine;
+  font-size: 20pt;
 }
-td {
-  width: 100px;
-  height: 100px;
+button {
+  margin-top: 20px;
+  cursor: pointer;
 }
-table {
-  margin: auto;
+
+#container {
+  display: inline-block;
+  background-color: black;
 }
-.vertical {
-  border-left: 2px solid black;
-  border-right: 2px solid black;
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 7rem);
+  grid-template-rows: repeat(3, 7rem);
+  grid-gap: 0.25rem;
+  width: content;
 }
-.horizontal {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+
+#board > div {
+  background-color: #eee;
+  color: red;
+  font-weight: bold;
+  font-size: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
-#square {
-  border: 2px solid black;
-}
-a {
-  text-decoration: none;
+
+#winnersCircle {
+  font-size: 5rem;
+  color: blueviolet;
 }
