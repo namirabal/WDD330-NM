@@ -28,12 +28,28 @@ h2 {
   list-style-type: none;
   cursor: pointer;
   position: relative;
-  padding: 12px 8px 12px 20px;
+  padding: 15px 8px 1px 20px;
   background: whitesmoke;
   font-size: 18px;
   transition: 0.2s;
   user-select: none;
-  padding-bottom: 30px;
+}
+#detailsList {
+  border-left: 6px solid #0076b6;
+  list-style-type: none;
+  cursor: pointer;
+  position: relative;
+  background: whitesmoke;
+  font-size: 9pt;
+  transition: 0.2s;
+  user-select: none;
+  text-align: center;
+}
+#countTask {
+  padding: 0px 10px 0px 10px;
+}
+.switch {
+  padding: 0px 10px 0px 10px;
 }
 form {
   border-left: 6px solid #0076b6;
@@ -71,4 +87,21 @@ button {
 .botton:hover {
   background-color: #1b6144;
   justify-content: space-between;
+}
+.toDoTemp {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.toDoTemp p {
+  width: 90%;
+}
+.checkToDo {
+  width: 5%;
+}
+.todoClose {
+  width: 5%;
+  font-size: 8pt;
+  padding: 5px;
+  margin: 0;
 }

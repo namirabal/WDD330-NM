@@ -1,7 +1,9 @@
 
+const listaTareas = document.getElementById('listaTareas');
+//const detailsList = document.getElementById('detailsList');
+//const todosCount = document.getElementById('todosCount');
 const formulario = document.getElementById('formulario');
 const inputID = document.getElementById('inputID');
-const listaTareas = document.getElementById('listaTareas');
 const template = document.getElementById('template').content;//regla: siempre que se accede a un template se usa content,si no, no sirve
 const fragment = document.createDocumentFragment();
 let tareas = {
@@ -23,6 +25,7 @@ let tareas = {
 listaTareas.addEventListener('click', e => {
     btnAccion(e)
 }) //conectado con la const  btnAccion
+
 
 formulario.addEventListener('submit', e =>{
     e.preventDefault()//esto sirve para que se vea y no desaparezca en el console
