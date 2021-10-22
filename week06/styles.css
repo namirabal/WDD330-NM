@@ -99,6 +99,9 @@ button {
 .checkToDo {
   width: 5%;
 }
+.checkToDo:checked + p {
+  text-decoration: line-through;
+}
 .todoClose {
   width: 5%;
   font-size: 8pt;

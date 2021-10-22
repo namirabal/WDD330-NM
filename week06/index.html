@@ -1,48 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>Week 06-Challenge One: Todo- Natasha Mirabal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="./app.js" charset="utf-8" defer></script>
+    <script src="./switch.js" charset="utf-8" defer></script>
+    <script src="./toDos.js" charset="utf-8" defer></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
 
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta charset="utf-8">
-  <title>Week 06-Challenge One: Todo- Natasha Mirabal</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="./app.js" charset="utf-8" defer></script>
-  <script src="./switch.js" charset="utf-8" defer></script>
-  <script src="./toDos.js" charset="utf-8" defer></script>
-  <link rel="stylesheet" href="./styles.css">
-</head>
+  <body>
+    <div class="container">
+      <h2>TO DO LIST</h2>
 
-<body>
-<div class="container">
-    <h2>TO DO LIST</h2>
-    
-    <div id="listaTareas"></div>
-    
-        <div id="detailsList">
-          <span id="countTask">0 Tasks Left</span>
-            <span>
-                <span class="switch">All</span>
-                <span class="switch">Active</span>
-                <span class="switch">Completed</span>
-            </span>
-        </div>
+      <div id="listaTareas"></div>
 
-       <form id="formulario"> 
-            <input id="inputID" type="text" placeholder="ingrese tarea" autofocus>
-            <button type="submit" class="botton">ADD</button> 
-        </form>
-      
-</div>
+      <div id="detailsList">
+        <span id="countTask">0 Tasks Left</span>
+        <span>
+          <span class="switch" id="switch1">All</span>
+          <span class="switch" id="switch2">Active</span>
+          <span class="switch" id="switch3">Completed</span>
+        </span>
+      </div>
 
-<template id="template">
-    <div class="toDoTemp">
-        <input type="checkbox" class="checkToDo"/>
+      <form id="formulario">
+        <input id="inputID" type="text" placeholder="ingrese tarea" autofocus />
+        <button type="submit" class="botton">ADD</button>
+      </form>
+    </div>
+
+    <template id="template">
+      <div class="toDoTemp">
+        <input type="checkbox" class="checkToDo" />
         <p>Tarea #1</p>
         <span class="todoContent"></span>
         <button class="todoClose">X</button>
-    </div>
-</template>
-   
-</body>
-
+      </div>
+    </template>
+  </body>
 </html>
