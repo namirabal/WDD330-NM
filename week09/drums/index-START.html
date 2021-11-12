@@ -60,39 +60,35 @@
   <audio data-key="75" src="sounds/tom.wav"></audio>
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
-<script>
-      document.addEventListener("keydown", (event) => {
+  <script>
+    document.addEventListener('keydown', event => {
       // This is all we need for MVP
       const { keyCode } = event;
       const audio = document.querySelector(`audio[data-key="${keyCode}"]`);
-      if (!audio) {
-        return;
-      }
+      if (!audio){ return; }
       audio.pause();
       audio.currentTime = 0;
       audio.play();
-
+  
       // Stretch goal to make styles
       const key = document.querySelector(`.key[data-key="${keyCode}"]`);
       // NOTE: I don't know why this works. I stole it.
       // https://stackoverflow.com/questions/6268508/restart-animation-in-css3-any-better-way-than-removing-the-element
-      key.style.animation = "none";
+      key.style.animation = 'none';
       key.offsetHeight; /* trigger reflow */
       key.style.animation = null;
-
-      key.classList.add("pressed");
-      key.classList.add("down");
-      setTimeout(() => key.classList.remove("pressed"), 400);
+  
+      key.classList.add('pressed');
+      key.classList.add('down');
+      setTimeout(() => key.classList.remove('pressed'), 400);
     });
-
-    document.addEventListener("keyup", (event) => {
+  
+    document.addEventListener('keyup', event => {
       const { keyCode } = event;
       const key = document.querySelector(`.key[data-key="${keyCode}"]`);
-      if (!key) {
-        return;
-      }
-      key.classList.remove("down");
+      if (!key){ return; }
+      key.classList.remove('down');
     });
-</script>
+  </script>
 </body>
 </html>
