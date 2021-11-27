@@ -40,29 +40,29 @@ export default class Auth {
   }
   // uses the email of the currently logged in user to pull up the full user details for that user from the database
   async getCurrentUser(email) {
-  //   try {   WORKING HERE
-  //     // 3. add the code here to make a request for the user identified by email...don't forget to send the token!
-  //     const data = await makeRequest(
-  //       "users?email=" + email,
-  //       "GET",
-  //       null,
-  //       this.jwtToken
-  //     );
+//   //   try {   WORKING HERE
+//   //     // 3. add the code here to make a request for the user identified by email...don't forget to send the token!
+//   //     const data = await makeRequest(
+//   //       "users?email=" + email,
+//   //       "GET",
+//   //       null,
+//   //       this.jwtToken
+//   //     );
 
-  //     console.log(data);
-  //     return data[0];
-  //   } catch (error) {
-  //     // if there were any errors display them
-  //     this.errors.handleError(error);
+//   //     console.log(data);
+//   //     return data[0];
+//   //   } catch (error) {
+//   //     // if there were any errors display them
+//   //     this.errors.handleError(error);
 
-  //     console.log(error);
-  //   }
-  // }
+//   //     console.log(error);
+//   //   }
+//   // }
 
-  set token(value) {
-    // we need this for the getter to work...but we don't want to allow setting the token through this.
-  }
-  get token() {
-    return this.jwtToken;
-  }
-} // end auth class
+//   set token(value) {
+//     // we need this for the getter to work...but we don't want to allow setting the token through this.
+//   }
+//   get token() {
+//     return this.jwtToken;
+//   }
+// } // end auth class
