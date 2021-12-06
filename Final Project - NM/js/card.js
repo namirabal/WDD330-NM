@@ -24,3 +24,4 @@ fetch(url2)
     });
     cardContainer.innerHTML = content;
   });
+  

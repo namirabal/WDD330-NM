@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 4fr 2fr 2fr;
   background-color: black;
-  @media screen and (max-width: 1000px){
+  @media screen and (max-width: 1000px) {
     grid-template-columns: 4fr;
   }
 }
@@ -12,8 +12,8 @@
   display: grid;
   background-size: contain !important;
   background-position: center !important;
-  
-  @media screen and (min-width: 1000px){
+
+  @media screen and (min-width: 1000px) {
     &:nth-of-type(1) {
       background-size: cover !important;
     }
@@ -42,4 +42,4 @@
     font-size: 0.9em;
   }
 }
-// sass --watch scss:css
+//sass --watch scss:css
