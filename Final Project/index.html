@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final portfolio</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/BYU logo.3b8aa079.png">
+  </head>
+  <body>
+    <header>
+      <nav class="masterHeader_navBar">
+        <h2 class="logo-container">
+          <a href="">
+            <img
+              id="masthead-logo"
+              class="masthead__logo"
+              src="./img/BYU logo.3b8aa079.png"
+              alt=""
+            />
+            <!-- <span class="masthead--hide">BYU</span> -->
+          </a>
+        </h2>
+
+        <div class="search-controls">
+          <input
+          id="search-box"
+            class="searchBox"
+            placeholder="search movies here"
+            type="text"
+          />
+          <button id="search-btn" onclick="getSearch()">Search</button>
+        </div>
+
+        <div id="masthead-dropdown-menus" class="masthead__dropdown-menus">
+          <!-- <a href="#trending-bar-start" class="skip-link">Skip to Trending Bar</a> -->
+          <ul class="mastheadMenu list-inline">
+            <li
+              class="menuHeader_li">
+              <a class="menuHeader_A" href="#carruselContainer">Trending</a>
+            </li>
+            <li class="menuHeader_li">
+              <a class="menuHeader_A" href="#card-container">Movies</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- aca carrusel: -->
+    <div id="carruselContainer">
+      <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp
+      imagenes   -->
+    </div>
+
+    <div id="card-container"></div>
+    <div id="search-container" class="card-container"></div>
+    <script src="js/card.js"></script>
+    <script src="js/get_trending.js"></script>
+    <script src="js/search.js"></script>
+  </body>
+</html>

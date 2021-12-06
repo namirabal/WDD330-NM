@@ -1,0 +1,19 @@
+@import "componentes/peli";
+@import "componentes/carrusel";
+@import "componentes/header";
+@import "variables";
+
+body{
+    margin: 0 10%;
+    background:black;
+}
+
+.search-controls{
+    display: flex;
+    input{
+        border-radius: 2em 0 0 2em;
+    }
+    button{
+        border-radius: 0 2em 2em 0;
+    }
+}

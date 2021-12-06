@@ -1,0 +1,45 @@
+#carruselContainer {
+  display: grid;
+  grid-template-columns: 4fr 2fr 2fr;
+  background-color: black;
+  @media screen and (max-width: 1000px){
+    grid-template-columns: 4fr;
+  }
+}
+
+.trending {
+  min-height: 55vh;
+  display: grid;
+  background-size: contain !important;
+  background-position: center !important;
+  
+  @media screen and (min-width: 1000px){
+    &:nth-of-type(1) {
+      background-size: cover !important;
+    }
+  }
+  h3 {
+    font-family: $titulo;
+    color: white;
+    text-indent: 1ch;
+    grid-column: 1;
+    grid-row: 3;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-left: red 3px solid;
+    min-width: 80%;
+    max-width: 85%;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    margin: 5px 10px;
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+.trending:nth-of-type(2) {
+  h3 {
+    font-size: 0.9em;
+  }
+}
+// sass --watch scss:css
